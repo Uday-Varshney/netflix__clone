@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <script type="module" src="./main.js"></script> -->
+    <title>Netflix Sign up</title>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <img src="./images/logo.png" alt="" class="logo" />
+      </nav>
+      <div class="bk-container">
+        <h2>Sign Up</h2>
+        <input
+          type="text"
+          placeholder="Full Name"
+          required
+          id="fullname"
+          class="wh-inpu"
+        />
+        <input
+          type="number"
+          required
+          placeholder="Phone Number"
+          id="phnum"
+          class="wh-inpu"
+          style="appearance: textfield"
+        />
+        <input
+          type="eamil"
+          id="email"
+          placeholder="example@gmail.com"
+          class="wh-inpu"
+          required
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          required
+          class="wh-inpu"
+        />
+        <!-- <input
+          type="password"
+          id="conpassword"
+          placeholder="Confirm password"
+        /> -->
+        <button onclick="register()" class="redbtn">Sign Up</button>
+      </div>
+    </div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  <script src="./index.js"></script>
+</html>

@@ -1,0 +1,286 @@
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+hr {
+  margin: 0px;
+  border: none;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  /* here 0.7 is the opacity */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/header-image.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15%;
+  background-color: transparent;
+  margin: 10px;
+}
+
+.logo {
+  background-color: transparent;
+  width: auto;
+  height: 8vh;
+  cursor: pointer;
+}
+
+button {
+  margin: 10px;
+  border: 1px solid transparent;
+  border-radius: 5%;
+  padding: 10px;
+  color: white;
+}
+
+.right-container {
+  background-color: transparent;
+}
+
+.language {
+  background-color: transparent;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 5%;
+  padding: 10px;
+  color: white;
+}
+.down-arrow {
+  width: 10px;
+  margin-left: 10px;
+}
+.redbtn {
+  background-color: red;
+}
+
+.redbtn a {
+  text-decoration: none;
+  color: white;
+}
+
+.wh-inpu {
+  display: flex;
+  /* color: aqua; */
+  height: 40px;
+  text-align: left;
+  width: 25vw;
+  padding-left: 8px;
+  margin-bottom: 8px;
+  background-color: #303030;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* margin-top: 100px; */
+}
+
+.redbtn:hover {
+  background-color: rgb(160, 0, 0);
+}
+
+.emailinp {
+  width: 20vw;
+  height: 5vh;
+  align-items: center;
+  padding-left: 2%;
+  background-color: rgba(255 255 255 / 11%);
+}
+
+form {
+  padding: 0%;
+  margin: 0%;
+}
+
+/* this is features part*/
+hr {
+  size: 10;
+  color: grey;
+}
+
+.features {
+  padding: 50px 12%;
+  font-size: 22px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.text-col {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.img-col {
+  /* flex basis dicide the size of the flex */
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.img-col img {
+  width: 90%;
+  margin: auto;
+}
+
+/* faq */
+
+.faq {
+  padding: 20px 12%;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 40px;
+}
+
+.list {
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+
+.list li {
+  list-style: none;
+  padding: 5px;
+}
+
+.list li label {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #303030;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.content {
+  background: #303030;
+  text-align: left;
+  padding: 0px 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-out;
+}
+
+.list input[type="radio"]:checked + label + .content {
+  max-height: 600px;
+  padding: 10px 20px;
+}
+
+.list input[type="radio"]:checked + label::after {
+  transform: rotate(135deg);
+}
+
+/* footer */
+
+footer h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.row {
+  text-align: center;
+  align-items: flex-start;
+  /* it will make all the item at the same base line */
+}
+.col {
+  flex-basis: 33%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.col a {
+  display: block;
+  color: #ababab;
+  font-size: 14px;
+  margin: 10px;
+}
+
+/* media querrys */
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 100px;
+    height: 4vh;
+    margin-right: 10px;
+  }
+}
+
+/* hindi page */
+
+/* select:checked[hindi] + .logo { */
+/* height: 200px; */
+/* }   */
+
+select::selection[hindi] + .logo {
+  height: 200px;
+}
+
+/* sigin and login page */
+.bk-container {
+  width: 35%;
+  /* height: 100%; */
+  /* display: flex; */
+  padding: 4% 3% 4% 5%;
+  background-color: rgb(0 0 0 / 55%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.long-btn {
+  width: 25vw;
+  border-radius: 5px;
+  /* margin-left: -15%; */
+  margin-right: 20%;
+}
+
+/* remove the number arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
