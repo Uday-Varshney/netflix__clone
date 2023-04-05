@@ -1,11 +1,12 @@
 // Your web app's Firebase configuration//
 var firebaseConfig = {
-  apiKey: "AIzaSyDLEe7U72xokoQkDXNggq9woGmCRcLF4QQ",
-  authDomain: "netphlix-31d3b.firebaseapp.com",
-  projectId: "netphlix-31d3b",
-  storageBucket: "netphlix-31d3b.appspot.com",
-  messagingSenderId: "414604212037",
-  appId: "1:414604212037:web:de2eef4895297c2195302c",
+  apiKey: "AIzaSyCMUuXCmUZoNWGDptqCycwb5LuDJchs-00",
+  authDomain: "netflixclone-355d5.firebaseapp.com",
+  databaseURL: "https://netflixclone-355d5-default-rtdb.firebaseio.com",
+  projectId: "netflixclone-355d5",
+  storageBucket: "netflixclone-355d5.appspot.com",
+  messagingSenderId: "1000114775811",
+  appId: "1:1000114775811:web:0b9552951e13e98c092b36",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
