@@ -66,6 +66,20 @@ input.search {
     no-repeat 13px center;
 }
 
+#user {
+  height: 7vh;
+  margin-left: 10px;
+}
+
+#drop-down {
+  background-color: #000000;
+  color: white;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  border: black;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
