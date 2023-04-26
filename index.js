@@ -1,3 +1,11 @@
+// preloader
+window.addEventListener("load", function () {
+  document.querySelector("#preloader").style.display = "block";
+  setTimeout(function () {
+    document.querySelector("#preloader").style.display = "none";
+  }, 4000);
+});
+
 // Your web app's Firebase configuration//
 var firebaseConfig = {
   apiKey: "AIzaSyCMUuXCmUZoNWGDptqCycwb5LuDJchs-00",
